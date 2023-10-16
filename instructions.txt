@@ -1,0 +1,9 @@
+change the permissions of install_grub file
+
+chmod +x install_grub
+
+then, run the script
+
+./install_grub
+
+if you get some troubles please run as sudo
