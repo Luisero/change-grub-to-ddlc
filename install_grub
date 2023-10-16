@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Defina sua lista de itens separados por espaços
+
 lista=("Doki Doki Literature Club (Chibi Version)" "Natsuki (Doki Doki Literature Club)" "Yuri (Doki Doki Literature Club)" "Monika (Doki Doki Literature Club)" "Sayori (Doki Doki Literature Club)")
 
-# Use o comando 'shuf' para embaralhar a lista e 'head' para pegar o primeiro item
+
 item_aleatorio=$(printf "%s\n" "${lista[@]}" | shuf -n 1)
 
-# Exiba o item escolhido aleatoriamente
 echo "O item escolhido aleatoriamente é: $item_aleatorio"
 cd "$item_aleatorio"
 chmod +x install.sh
+sh install.sh
 exec bash
